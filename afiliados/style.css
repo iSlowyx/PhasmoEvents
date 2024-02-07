@@ -1,0 +1,29 @@
+.afilfoto{
+    width: 420px;
+}
+.afiliados{
+    text-align: center;
+    padding: 100px 0px;
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+}
+img{
+    overflow:hidden;
+    transition: transform 0.3s ease;
+}
+img:hover{
+ -webkit-transform:scale(0.90);
+ transform:scale(0.90);
+}
+h2{
+    color: white;
+}
+
+@media (max-width:662px){
+    .afilfoto{
+        width: 300px;
+    }
+    #image03 {
+        padding: 0px;
+    }
+    
+}

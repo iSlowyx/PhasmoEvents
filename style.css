@@ -1,0 +1,289 @@
+/* entrada de los elementos /  
+/ animacion fade /
+  @keyframe fade {     
+    from {         
+        opacity: 0;     
+    }     
+    to {         
+        opacity: 1;     
+    } 
+}  
+  
+/ entrada de los elementos hacia arriba/
+  @keyframes slide-up {  
+    from {
+        transform: translateY(130px);
+    }  
+    to {  
+        transform: translateY(0);     
+    } 
+}  
+
+/ entrada de los elementos hacia la derecha /  
+   @keyframes slide-right {     
+    from {         
+        transform: translateX(500px);    
+     }     
+     to {         
+        transform: translateX(0); 
+    } 
+} 
+ 
+/ entrada de los elementos hacia la izquierda 
+@keyframes slide-left {
+    from {
+        transform: translateX(500px);
+    }
+
+    to {
+        transform: translateX(-2500px);
+    }
+}*/
+
+html {
+    background: rgb(59, 61, 216);
+    background: linear-gradient(0deg, rgb(59, 61, 216) 7%, rgb(11, 1, 1) 85%, rgb(0, 0, 0) 100%);
+    z-index: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 0px;
+    padding-top: 20px;
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+}
+
+.button {
+    transition: 0.35s ease-out;
+    transition-delay: 0.2s;
+}
+
+.button:hover {
+    color: white;
+    border: 1px solid white;
+
+}
+
+a {
+    text-decoration: none;
+    color: #67f5ff;
+    padding: 10px 25px;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 400px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px 0px;
+    color: #67f5ff;
+    font-weight: bolder;
+    font-family: 'Lora', serif;
+    letter-spacing: 0.1rem;
+    font-size: 48px;
+    font-weight: bolder;
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+}
+
+strong {
+    color: inherit;
+    font-weight: bolder;
+}
+
+@keyframe fade{     
+    from {         
+        opacity: 0;     
+    }     
+    to {         
+        opacity: 1;     
+    } 
+} 
+@keyframes slide-up {  
+    from {
+        transform: translateY(80px);
+    }  
+    to {  
+        transform: translateY(0);     
+    } 
+}
+@keyframes slide-down {  
+    from {
+        transform: translateY(-70px);
+    }  
+    to {  
+        transform: translateY(0);     
+    } 
+}  
+.logo {
+    width: 240px;
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: fade 1s ease-in, slide-down 1s ease-in-out;
+}
+
+.logo:hover {
+    -webkit-transform: scale(0.90);
+    transform: scale(0.90);
+}
+
+.crysispng {
+    width: 374px;
+    padding: 10px 30px;
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+}
+
+#text01 {
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    width: 374px;
+    padding: 10px 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 300px;
+
+}
+
+#text03 {
+    width: 100%;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+#image03 {
+    padding: 40px 100px;
+}
+
+.patreon {
+    width: 130px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+}
+
+.patreon:hover {
+    -webkit-transform: scale(0.90);
+    transform: scale(0.90);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    animation: fade 1s ease-in, slide-up 1s ease-in-out;
+}
+
+hr {
+    width: 60%;
+}
+
+@media (max-width:900px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0px;
+        padding-bottom: 100px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .buttons {
+        font-size: 16px;
+        gap: 0px;
+        padding: 0px;
+    }
+    #text03 {
+        width: 100%;
+        padding-right: 0px;
+        padding-top: 50px;
+    }
+    .button{
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width:570px) {
+    h1{
+        font-size: 36px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Lexend Deca', sans-serif;
+        padding-top: 20px;
+        text-align: center;
+        padding: 0px;
+    }
+    #text01 {
+        text-align: left;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        font-weight: 400;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    
+    }
+    
+    #text03 {
+        width: 100%;
+        padding-right: 0px;
+        padding-top: 50px;
+    }
+    
+    #image03 {
+        padding: 40px 0px;
+    }
+    .crysispng {
+        width: 100%;
+        padding: 10px 0px;
+        animation: fade 1s ease-in, slide-up 1s ease-in-out;
+    }
+}
